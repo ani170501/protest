@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Форум</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #posts { margin-top: 20px; }
+    .post { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+    .post-author { font-weight: bold; }
+    .post-content { margin-top: 5px; }
+  </style>
+  <script src="protest.js"></script>
+</head>
+<body>
+  <h1>Моят Форум</h1>
+  
+  <div>
+    <input type="text" id="author" placeholder="Вашето име">
+    <textarea id="content" placeholder="Вашият пост"></textarea>
+    <button id="submitPost">Добави пост</button>
+  </div>
+
+  <div id="posts"></div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="forum.js"></script>
+</body>
+</html>
